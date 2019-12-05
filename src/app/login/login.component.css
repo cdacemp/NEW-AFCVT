@@ -1,0 +1,47 @@
+.login-form
+{
+    background-image: url("../../assets/images/login-image1.jpg");
+    background-size: cover;
+}
+
+.right-side
+{
+    background: #fff;
+    padding:50px;
+    margin:50px 0;
+}
+.left-side
+{
+    padding: 50px;
+    margin: 50px 0;
+    background: rgba(0, 0, 0, 0.39);
+}
+.form-title
+{
+  text-align: center;
+}
+.right-side span
+{
+  color:#aa0079;
+}
+.form-foot
+{
+    display: flex;
+}
+.login-btn
+{
+    margin:0 auto;
+    width:40%;
+}
+.login-btn button
+{
+    padding: 8px 70px;
+}
+.pass
+{
+    margin-bottom: 30px;
+}
+.forg-pass
+{
+    margin-top: 20px;
+}

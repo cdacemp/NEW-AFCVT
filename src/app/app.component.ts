@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'afcvtproject';
+  getUrl() {
+    return "url('images/login-image1.jpg')";
+  }
 }
