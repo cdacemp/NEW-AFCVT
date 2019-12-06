@@ -11,8 +11,15 @@ import { RegistrationComponent } from './registration/registration.component';
 import { DashboardComponent } from './super-dashboard/dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { StationDashboardComponent } from './station-dashboard/station-dashboard.component';
-import { SidebarComponent } from './admin-dashboard/sidebar/sidebar.component';
-import { NavbarComponent } from './admin-dashboard/navbar/navbar.component';
+import { AdminSidebarComponent } from './admin-dashboard/admin-sidebar/admin-sidebar.component';
+import { AdminNavbarComponent } from './admin-dashboard/admin-navbar/admin-navbar.component';
+import { AdminFooterComponent } from './admin-dashboard/admin-footer/admin-footer.component';
+import { SuperSidebarComponent } from './super-dashboard/super-sidebar/super-sidebar.component';
+import { SuperNavbarComponent } from './super-dashboard/super-navbar/super-navbar.component';
+import { SuperFooterComponent } from './super-dashboard/super-footer/super-footer.component';
+import { StationSidebarComponent } from './station-dashboard/station-sidebar/station-sidebar.component';
+import { StationNavbarComponent } from './station-dashboard/station-navbar/station-navbar.component';
+import { StationFooterComponent } from './station-dashboard/station-footer/station-footer.component';
 
 
 @NgModule({
@@ -25,8 +32,15 @@ import { NavbarComponent } from './admin-dashboard/navbar/navbar.component';
     DashboardComponent,
     AdminDashboardComponent,
     StationDashboardComponent,
-    SidebarComponent,
-    NavbarComponent,
+    AdminSidebarComponent,
+    AdminNavbarComponent,
+    AdminFooterComponent,
+    SuperSidebarComponent,
+    SuperNavbarComponent,
+    SuperFooterComponent,
+    StationSidebarComponent,
+    StationNavbarComponent,
+    StationFooterComponent,
    
   ],
   imports: [
