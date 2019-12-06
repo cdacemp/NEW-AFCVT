@@ -8,7 +8,12 @@ import { HeaderComponent } from './shared/shared_component/header/header.compone
 import { FooterComponent } from './shared/shared_component/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './super-dashboard/dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { StationDashboardComponent } from './station-dashboard/station-dashboard.component';
+import { SidebarComponent } from './admin-dashboard/sidebar/sidebar.component';
+import { NavbarComponent } from './admin-dashboard/navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     FooterComponent,
     LoginComponent,
     RegistrationComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminDashboardComponent,
+    StationDashboardComponent,
+    SidebarComponent,
+    NavbarComponent,
+   
   ],
   imports: [
     BrowserModule,
