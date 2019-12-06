@@ -8,7 +8,7 @@ import { HeaderComponent } from './shared/shared_component/header/header.compone
 import { FooterComponent } from './shared/shared_component/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { DashboardComponent } from './super-dashboard/dashboard.component';
+import { DashboardComponent } from './super-dashboard/super-dashboard.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { StationDashboardComponent } from './station-dashboard/station-dashboard.component';
 import { AdminSidebarComponent } from './admin-dashboard/admin-sidebar/admin-sidebar.component';
