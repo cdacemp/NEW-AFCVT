@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/shared_component/header/header.compone
 import { FooterComponent } from './shared/shared_component/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { RegistrationComponent } from './registration/registration.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

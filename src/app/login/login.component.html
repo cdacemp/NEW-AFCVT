@@ -1,47 +1,49 @@
 <!-- Changes done By Annu-->
 <div class="login-form">
     <div class="container">
- <div class="row">
-     <div class="col-lg-5 col-md-5 col-sm-5 left-side">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 left-side">
 
-     </div>
-     <div class="col-lg-7 col-md-7 col-sm-7 right-side">
-         <div class="form-title">
-             <h3>Account <span>Login</span></h3>
-             
-         </div>
-<form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()" style="padding: 50px 70px!important;">
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="text" formControlName="email" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && fval.email.errors }" placeholder="Enter email here" />
-        <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
-            <div *ngIf="fval.email.errors.required">Email is required</div>
-            <div *ngIf="fval.email.errors.email">Enter valid email address</div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 right-side">
+                <div class="form-title">
+                    <h3>Account <span>Login</span></h3>
+
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()" style="padding: 50px 70px!important;">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" formControlName="email" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && fval.email.errors }"
+                            placeholder="Enter email here" />
+                        <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+                            <div *ngIf="fval.email.errors.required">Email is required</div>
+                            <div *ngIf="fval.email.errors.email">Enter valid email address</div>
+                        </div>
+                    </div>
+                    <div class="form-group pass">
+                        <label for="password">Password</label>
+                        <input type="password" formControlName="password" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && fval.password.errors }"
+                            placeholder="Enter password here" />
+                        <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
+                            <div *ngIf="fval.password.errors.required">Password is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group login-btn">
+                        <button [disabled]="loading" class="btn btn-primary">
+                            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1" [routerLink]="['/dashboard']" routerLinkActive="router-link-active" ></span>
+                            Login
+                        </button>
+
+                    </div>
+                    <div class="forg-pass"><a routerLink="/forgot-pass" class=" btn-link"> Forgot Password</a></div>
+                    <div class="form-foot">
+
+                        <p>Not a Member ?</p><a routerLink="/register" class=" btn-link"> Register</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-    <div class="form-group pass">
-        <label for="password">Password</label>
-        <input type="password" formControlName="password" class="form-control"
-            [ngClass]="{ 'is-invalid': submitted && fval.password.errors }" placeholder="Enter password here" />
-        <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
-            <div *ngIf="fval.password.errors.required">Password is required</div>
-        </div>
-    </div>
-    <div class="form-group login-btn">
-        <button [disabled]="loading" class="btn btn-primary">
-            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
-            Login
-        </button>
-       
-    </div>
-    <div class="forg-pass"><a routerLink="/forgot-pass" class=" btn-link"> Forgot Password</a></div>
-    <div class="form-foot">
-            
-            <p>Not a Member ?</p><a routerLink="/register" class=" btn-link"> Register</a>
-    </div>
-</form>
-</div>
-</div>
-</div> 
 </div>

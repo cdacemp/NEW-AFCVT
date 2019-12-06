@@ -16,7 +16,7 @@ export class RegistrationComponent implements OnInit {
     private router: Router,
   ) { }
   registerForm: FormGroup;
-  loading = false;
+  // loading = false;
   submitted = false;
 
   ngOnInit() {
@@ -24,31 +24,22 @@ export class RegistrationComponent implements OnInit {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       phone: ['', Validators.required],
-      email: ['', [Validators.required,Validators.email]],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]]
-  });
+    });
   }
 
   get fval() { return this.registerForm.controls; }
 
-  // onFormSubmit(){
-  //   this.submitted = true;
-  //   // return for here if form is invalid
-  //   if (this.registerForm.invalid) {
-  //     return;
-  //   }
-  //   this.loading = true;
-  //   this.userService.register(this.registerForm.value).subscribe(
-  //     (data)=>{
-  //       this.alerts.setMessage('User Registered successfully!!', 'success');
-  //       this.router.navigate(['/login']);
-  //    },
-  //     (error)=>{
-  //       this.toastr.error(error.error.message, 'Error');
-  //       this.loading = false;
-  //     }
-  //   )
+  onFormSubmit() {
+    this.submitted = true;
+    // return for here if form is invalid
+    if (this.registerForm.invalid) {
+      return;
 
-  // }
+    }
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value));
+
+  }
 
 }

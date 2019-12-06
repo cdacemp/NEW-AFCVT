@@ -15,16 +15,32 @@ export class LoginComponent implements OnInit {
   returnUrl: string;
 
   constructor(
-    private formBuilder: FormBuilder,
+    private loginform: FormBuilder,
     private route: ActivatedRoute,
     private router: Router,
   ) { }
 
   ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-      email: ['', Validators.required],
+    this.loginForm = this.loginform.group({
+      email: ['',[ Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
   }
+
+  get fval() { return this.loginForm.controls; }
+
+  onFormSubmit(){
+    console.log("clicked");
+    
+    this.submitted = true;
+
+    if(this.loginForm.invalid){
+      return;
+    }
+    this.router.navigate(["dashboard"]);
+    alert("Success"+ JSON.stringify(this.loginForm.value))
+  }
+
+ 
 
 }
