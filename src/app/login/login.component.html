@@ -2,15 +2,16 @@
 <div class="login-form">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-5 left-side">
-
+            <div class="col-lg-5 col-md-5 left-side">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Delhi_Metro_logo.svg/349px-Delhi_Metro_logo.svg.png" 
+                alt="logo" style="width: 175px" class="img-fluid">
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-7 right-side">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12 right-side">
                 <div class="form-title">
                     <h3>Account <span>Login</span></h3>
 
                 </div>
-                <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()" style="padding: 50px 70px!important;">
+                <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()" class="form-style">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="text" formControlName="email" class="form-control"

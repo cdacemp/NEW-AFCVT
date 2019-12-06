@@ -2,6 +2,8 @@
 {
     background-image: url("../../assets/images/login-image1.jpg");
     background-size: cover;
+    height: 100%;
+ 
 }
 
 .right-side
@@ -15,6 +17,7 @@
     padding: 50px;
     margin: 50px 0;
     background: rgba(0, 0, 0, 0.39);
+    text-align: center;
 }
 .form-title
 {
@@ -30,8 +33,7 @@
 }
 .login-btn
 {
-    margin:0 auto;
-    width:40%;
+    text-align: center;
 }
 .login-btn button
 {
@@ -45,3 +47,28 @@
 {
     margin-top: 20px;
 }
+
+@media only screen and (min-width: 768px)
+{
+    .form-style
+    {
+        padding: 50px 70px!important;
+    }
+    
+}
+
+@media only screen and (max-width: 767px)
+{
+    .left-side
+    {
+        display: none;
+    }
+    .right-side {
+        margin: 50px 25px!important;
+    }
+    .form-style
+    {
+        padding: 30px 0px!important;
+    }
+}
+
