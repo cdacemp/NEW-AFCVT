@@ -20,6 +20,7 @@ import { SuperFooterComponent } from './super-dashboard/super-footer/super-foote
 import { StationSidebarComponent } from './station-dashboard/station-sidebar/station-sidebar.component';
 import { StationNavbarComponent } from './station-dashboard/station-navbar/station-navbar.component';
 import { StationFooterComponent } from './station-dashboard/station-footer/station-footer.component';
+import { SuperToggleComponent } from './super-dashboard/super-toggle/super-toggle.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { StationFooterComponent } from './station-dashboard/station-footer/stati
     StationSidebarComponent,
     StationNavbarComponent,
     StationFooterComponent,
+    SuperToggleComponent,
    
   ],
   imports: [

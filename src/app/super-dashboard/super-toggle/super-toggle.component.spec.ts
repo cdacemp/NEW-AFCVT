@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SuperSidebarComponent } from './super-sidebar.component';
+import { SuperToggleComponent } from './super-toggle.component';
 
-describe('SuperSidebarComponent', () => {
-  let component: SuperSidebarComponent;
-  let fixture: ComponentFixture<SuperSidebarComponent>;
+describe('SuperToggleComponent', () => {
+  let component: SuperToggleComponent;
+  let fixture: ComponentFixture<SuperToggleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SuperSidebarComponent ]
+      declarations: [ SuperToggleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SuperSidebarComponent);
+    fixture = TestBed.createComponent(SuperToggleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

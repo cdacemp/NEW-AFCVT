@@ -1,0 +1,22 @@
+/* .sidebar-brand{
+    width: 56px;
+    height: 66px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -5px;
+} */
+
+/* style="    background: linear-gradient(120deg, #00e4d0, #5983e8);" */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #17a2b8;
+    -moz-osx-font-smoothing: grayscale;
+}
+a:not([href]) {
+    color: white;
+    text-decoration: none;
+}

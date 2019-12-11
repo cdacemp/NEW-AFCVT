@@ -1,10 +1,10 @@
-<!-- Changes done By Annu-->
+ <!-- Changes done By Annu -->
 <div class="login-form">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-5 left-side">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Delhi_Metro_logo.svg/349px-Delhi_Metro_logo.svg.png" 
-                alt="logo" style="width: 175px" class="img-fluid">
+                <img src="../../assets/images/Metro_logo.svg.png" 
+                alt="logo" style="width: 175px" class="responsive">
             </div>
             <div class="col-xl-7 col-lg-7 col-md-7 col-sm-6 col-xs-12 right-side">
                 <div class="form-title">
@@ -47,4 +47,60 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
+
+
+<!--  
+ <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-heading">
+            <h2 class="text-center">Login</h2>
+        </div>
+        <hr />
+        <div class="modal-body">
+            <form action="" role="form" [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        <span class="fa fa-user"></span>
+                        </span>
+                        <input type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.email.errors }"
+                        placeholder="Enter email here" />
+                    <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+                        <div *ngIf="fval.email.errors.required">Email is required</div>
+                        <div *ngIf="fval.email.errors.email">Enter valid email address</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                        <span class="fa fa-lock"></span>
+                        </span>
+                        <input type="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.password.errors }"
+                        placeholder="Enter password here" />
+                    <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
+                        <div *ngIf="fval.password.errors.required">Password is required</div>
+                    </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-success btn-lg"
+                    [routerLink]="['/dashboard']" routerLinkActive="router-link-active">Login</button>
+                    <a href="#" class="btn btn-link">Forget Password</a> 
+               <div class="forg-pass"><a routerLink="/forgot-pass" class=" btn-link"> Forgot Password</a></div>
+                    <div class="form-foot">
+
+                        <p>Not a Member ?</p><a routerLink="/register" class=" btn-link"> Register</a>
+                    </div>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+</div> -->
+ 
