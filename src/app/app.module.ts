@@ -15,12 +15,11 @@ import { AdminSidebarComponent } from './admin-dashboard/admin-sidebar/admin-sid
 import { AdminNavbarComponent } from './admin-dashboard/admin-navbar/admin-navbar.component';
 import { AdminFooterComponent } from './admin-dashboard/admin-footer/admin-footer.component';
 import { SuperSidebarComponent } from './super-dashboard/super-sidebar/super-sidebar.component';
-import { SuperNavbarComponent } from './super-dashboard/super-navbar/super-navbar.component';
 import { SuperFooterComponent } from './super-dashboard/super-footer/super-footer.component';
 import { StationSidebarComponent } from './station-dashboard/station-sidebar/station-sidebar.component';
-import { StationNavbarComponent } from './station-dashboard/station-navbar/station-navbar.component';
 import { StationFooterComponent } from './station-dashboard/station-footer/station-footer.component';
 import { SuperToggleComponent } from './super-dashboard/super-toggle/super-toggle.component';
+import { SuperNavbarComponent } from './super-dashboard/super-navbar/super-navbar.component';
 
 
 @NgModule({
@@ -37,12 +36,11 @@ import { SuperToggleComponent } from './super-dashboard/super-toggle/super-toggl
     AdminNavbarComponent,
     AdminFooterComponent,
     SuperSidebarComponent,
-    SuperNavbarComponent,
     SuperFooterComponent,
     StationSidebarComponent,
-    StationNavbarComponent,
     StationFooterComponent,
     SuperToggleComponent,
+    SuperNavbarComponent
    
   ],
   imports: [
